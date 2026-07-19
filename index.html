@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>productivity-dashboard</title>
+</head>
+
+<body>
+    <div class="main">
+        <section class="allelems">
+            <header>
+                <div class="header1">
+                    <h2>20 June 2025</h2>
+                    <h1>Tuesday, 8:00 pm</h1>
+                    <h4>Kanpur , UP</h4>
+                </div>
+                <div class="header2">
+                    <h2>34°C</h2>
+                    <h3 id="precip">Precipitation: 10%</h3>
+                    <h3 id="humidity">Humidity: 58%</h3>
+                    <h3 id="wind"> Wind: 8 km/h</h3>
+                    <h3 id="currentW">Mostly cloudy</h3>
+                </div>
+            </header>
+            <div class="allFeatures">
+                <div class="todo elem" id="0">
+                    <div class="icon">
+                        <img src="./download (22).png">
+                        <h2>To-Do List</h2>
+                        <p>Organize your tasks</p>
+                    </div>
+                </div>
+                <div class="daily-motivation elem" id="1">
+                    <div class="icon">
+                        <img src="./download (23).png">
+                        <h2>Motivation</h2>
+                        <p>Inspire your mind</p>
+                    </div>
+                </div>
+                <div class="pomodoro elem" id="2">
+                    <div class="icon">
+                        <img src="./download (24).png">
+                        <h2>Pomodoro</h2>
+                        <p>Focus and get more done</p>
+                    </div>
+                </div>
+                <div class="daily-planner elem" id="3">
+                    <div class="icon">
+                        <img src="./download (25).png">
+                        <h2>Daily-Planner</h2>
+                        <p>plan your perfect day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fullelems todo-fullpage">
+            <button class="backbtn" id="0">Back</button>
+            <h1>Your Personalised Task-list</h1>
+            <div class="todo-container">
+                <div class="addtask">
+                    <form>
+                        <input id="task-input" type="text" placeholder="Enter Task">
+                        <textarea placeholder="Enter Details" name="" id=""></textarea>
+                        <div class="mark-imp">
+                            <input type="checkbox" name="checkbox" id="check">
+                            <label for="check">Mark as important</label>
+                        </div>
+                        <button>Add Task</button>
+                    </form>
+                </div>
+                <div class="alltask">
+                    <!-- <div class="task">
+                        <h5>Gym jao</h5>
+                        <button>Mark as completed</button>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="fullelems motivation-fullpage">
+            <button class="backbtn" id="1">Back</button>
+            <div class="motivation-container">
+                <div class="motivation-wrapper">
+                    <img src="./icons8-quote-48.png">
+                    <div class="motivation1">
+                        <h2>Quote of the day</h2>
+                    </div>
+                    <div class="motivation2">
+                        <h1></h1>
+                    </div>
+                    <div class="motivation3">
+                        <h3>Apurvi</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fullelems pomodoro-fullpage">
+            <button class="backbtn" id="2">Back</button>
+            <h1>Study with me !</h1>
+            <h4 class="session">
+                Work Session
+            </h4>
+            <div class="pomodoro-container">
+                <h2>25:00</h2>
+                <button class="start-timer">Start</button>
+                <button class="pause-timer">Pause</button>
+                <button class="reset-timer">Reset</button>
+            </div>
+        </section>
+        <section class="fullelems daily-planner-fullpage">
+
+            <button class="backbtn" id="3">Back</button>
+            <h1>Plan your day to be more productive</h1>
+
+            <div class="planner-container">
+
+            </div>
+
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
